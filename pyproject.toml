@@ -1,0 +1,18 @@
+[build-system]
+requires = ["maturin>=1.8,<2.0", "pyo3>=0.23.3"]
+build-backend = "maturin"
+
+[project]
+name = "rust_calculator"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+[project.optional-dependencies]
+tests = ["pytest", "ruff", "pre-commit"]
+[tool.maturin]
+python-source = "python"
+features = ["pyo3/extension-module"]
