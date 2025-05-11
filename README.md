@@ -32,8 +32,9 @@ pip install maturin
 3. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/rust-python-demo.git
-cd rust-python-demo
+git clone https://github.com/yezz123/rust-python-demo.git
+
+cd rust-python-de
 ```
 
 4. Build the Rust extension:
@@ -80,20 +81,6 @@ result = multiply(4.0, 2.0)
 result = power(2.0, 3.0)  # 2^3
 ```
 
-## Running Tests
-
-1. Run Python tests:
-
-```bash
-python -m pytest tests/
-```
-
-2. Run Rust tests:
-
-```bash
-cargo test
-```
-
 ## Running Benchmarks
 
 The project includes a benchmark script that compares the performance of Rust and Python implementations:
@@ -106,7 +93,7 @@ This will run performance comparisons for basic arithmetic operations between Ru
 
 ## Project Structure
 
-```
+```sh
 rust-python-demo/
 ├── src/
 │   └── lib.rs           # Rust implementation
